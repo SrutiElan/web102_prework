@@ -10,21 +10,21 @@ Time spent: **4** hours spent in total
 
 The following **required** functionality is completed:
 
-* [y ] The introduction section explains the background of the company and how many games remain unfunded.
-* [y ] The Stats section includes information about the total contributions and dollars raised as well as the top two most funded games.
-* [y ] The Our Games section initially displays all games funded by Sea Monster Crowdfunding
-* [y] The Our Games section has three buttons that allow the user to display only unfunded games, only funded games, or all games.
+* [x] The introduction section explains the background of the company and how many games remain unfunded.
+* [x] The Stats section includes information about the total contributions and dollars raised as well as the top two most funded games.
+* [x] The Our Games section initially displays all games funded by Sea Monster Crowdfunding
+* [x] The Our Games section has three buttons that allow the user to display only unfunded games, only funded games, or all games.
 
 The following **optional** features are implemented:
 
-* [y] List anything else that you can get done to improve the app functionality!
+* [x] List anything else that you can get done to improve the app functionality!
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented features:
 
-<img src='https://imgur.com/a/263FPNh.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-https://imgur.com/a/263FPNh.gif is the link in case it doesn't work. 
+<img src='https://imgur.com/a/rtB4wNg.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+https://imgur.com/a/rtB4wNg.gif is the link in case it doesn't work. 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with Adobe MP4 to GIF Converter
 <!-- Recommended tools:
