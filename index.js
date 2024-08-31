@@ -117,16 +117,36 @@ function showAllGames() {
   // add all games from the JSON data to the DOM
   addGamesToPage(GAMES_JSON);
 }
-console.log("hi:" + filterFundedOnly.length + filterUnfundedOnly.length);
+
+function findGame() {
+  deleteChildElements(gamesContainer);
+  console.log("searched for: " + searchInput.value);
+
+  const input = searchInput.value.toLowerCase();
+  const foundGame = GAMES_JSON.filter((game) =>
+    game.name.toLowerCase().includes(input)
+  );
+  console.log("game found: " + foundGame.name);
+  if (foundGame.length > 0) {
+    addGamesToPage(foundGame);
+  } else {
+    const noResultMessage = document.createElement("p");
+    noResultMessage.textContent = `Sorry mate, ${searchInput.value} does not exist.`;
+    gamesContainer.append(noResultMessage);
+  }
+}
+
 // select each button in the "Our Games" section
 const unfundedBtn = document.getElementById("unfunded-btn");
 const fundedBtn = document.getElementById("funded-btn");
 const allBtn = document.getElementById("all-btn");
-
+const searchInput = document.getElementById("search-text");
+const searchBtn = document.getElementById("search-btn");
 // add event listeners with the correct functions to each button
 unfundedBtn.addEventListener("click", filterUnfundedOnly);
 fundedBtn.addEventListener("click", filterFundedOnly);
 allBtn.addEventListener("click", showAllGames);
+searchBtn.addEventListener("click", findGame);
 
 /*************************************************************************************
  * Challenge 6: Add more information at the top of the page about the company.
